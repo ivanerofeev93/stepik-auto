@@ -1,6 +1,6 @@
-import unittest
 from selenium import webdriver
 import time
+import unittest
 
 link = "http://suninjuly.github.io/registration2.html"
 browser = webdriver.Chrome()
@@ -18,10 +18,8 @@ class TestAbs(unittest.TestCase):
 
     def test_abs3(self):
         input3 = browser.find_element_by_xpath('//input[contains(@class, "third") and contains(@placeholder, "email")]')
-        input3.send_keys("Smolensk")
+        input3.send_keys("kuku@mail.ru")
 
 if __name__ == "__main__":
     unittest.main()
 
-time.sleep(3)
-browser.quit()
